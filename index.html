@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<link href="styles.css" rel="stylesheet">
+<head>
+<title>Custom Pen Commissioner</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", monospace}
+body {font-size:18px;
+.w3-half img{margin-bottom:-8px;margin-top:18px;opacity:0.6;cursor:pointer}}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Crazy Pen<br>Crafty Creations</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#Gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gallery</a>
+    <a href="#Services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+    <a href="#Contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a> 
+  </div>
+</nav>
+
+<div class="container">
+
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <div class="w3-container" style="margin-top:80px" id="Gallery">
+    <h1 class="w3-jumbo"><b>Custom Pen Commissions</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Gallery:</b></h1>
+  </div>
+  <div class="w3-row-padding">
+      <img src="pen1.jpg" style="width:25%" alt="Peep Pen">
+      <img src="pen2.jpg" style="width:25%" alt="Football Pen">
+      <img src="pen3.jpg" style="width:25%" alt="Pokemon Pen">
+  </div>
+
+
+  <div class="w3-container" id="Services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services:</b></h1>
+    <p>Want a customized pen? We got you covered!</p>
+    <p>Send us the name, image, and design you desire for your pen and we will make your dream pen a reality!</p>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="Contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact:</b></h1>
+    <p>Want to place an order? Contact us here!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+</div>
+
+</div>
+
+<script>
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
